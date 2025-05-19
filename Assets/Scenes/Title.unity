@@ -356,9 +356,9 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 524716054}
-        m_TargetAssemblyTypeName: MainManager, Assembly-CSharp
-        m_MethodName: SetPlayerName
+      - m_Target: {fileID: 238127886}
+        m_TargetAssemblyTypeName: MenuUIHandler, Assembly-CSharp
+        m_MethodName: PlayerNameDidEndChanging
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -385,7 +385,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 238127886}
+        m_TargetAssemblyTypeName: MenuUIHandler, Assembly-CSharp
+        m_MethodName: PlayerNameDidChange
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -457,6 +469,7 @@ GameObject:
   - component: {fileID: 238127884}
   - component: {fileID: 238127883}
   - component: {fileID: 238127882}
+  - component: {fileID: 238127886}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -547,6 +560,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &238127886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238127881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd0f7f2c0f11b4aa5a85f5c40fef4df0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startButton: {fileID: 1689899242}
 --- !u!1 &257364552
 GameObject:
   m_ObjectHideFlags: 0
