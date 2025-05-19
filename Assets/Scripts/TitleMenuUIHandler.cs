@@ -1,7 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class MenuUIHandler : MonoBehaviour
+public class TitleMenuUIHandler : MonoBehaviour
 {
     [SerializeField]
     Button startButton;
@@ -19,6 +20,12 @@ public class MenuUIHandler : MonoBehaviour
     public void PlayerNameDidEndChanging(string playerName)
     {
         MainManager.Instance.SetPlayerName(playerName);
+    }
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene(1);
+        Debug.Log("Game started");
     }
 
     private void SetStartButton(bool enabled)
