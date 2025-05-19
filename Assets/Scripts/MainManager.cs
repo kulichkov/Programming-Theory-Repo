@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.SceneManager;
+using UnityEngine.SceneManagement;
 
 public class MainManager : MonoBehaviour
 {
@@ -27,6 +27,7 @@ public class MainManager : MonoBehaviour
 
     public void StartGame()
     {
+        SceneManager.LoadScene(1);
         Debug.Log("Game started");
     }
 }
