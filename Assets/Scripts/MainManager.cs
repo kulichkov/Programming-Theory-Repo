@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class MainManager : MonoBehaviour
 {
-    public MainManager Instance { get; private set; }
+    public static MainManager Instance { get; private set; } // ENCAPSULATION”
 
     public string PlayerName;
 
