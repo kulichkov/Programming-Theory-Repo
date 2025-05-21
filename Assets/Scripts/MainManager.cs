@@ -21,7 +21,7 @@ public class MainManager : MonoBehaviour
     public void SetPlayerName(string playerName)
     {
         PlayerName = playerName;
-        Debug.Log("PlayerName set to " + PlayerName);
+        Debug.Log($"Player's name: {PlayerName}");
     }
 
 }
