@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class MainManager : MonoBehaviour
 {
@@ -22,12 +21,7 @@ public class MainManager : MonoBehaviour
     public void SetPlayerName(string playerName)
     {
         PlayerName = playerName;
-        Debug.Log("PlayerName set to " + PlayerName);
+        Debug.Log($"Player's name: {PlayerName}");
     }
 
-    public void StartGame()
-    {
-        SceneManager.LoadScene(1);
-        Debug.Log("Game started");
-    }
 }
